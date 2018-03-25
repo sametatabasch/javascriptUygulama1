@@ -1,0 +1,40 @@
+body {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.soruNumarasi {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.soru {
+    display: block;
+    position: relative;
+    border: 1px dotted;
+    padding: 5px;
+}
+.soru p {
+    margin: 2px 0 0 20px;
+    position: relative;
+}
+
+.cevap {
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    border: 1px dotted;
+}
+.cevapNumarasi{
+    float: left;
+    margin-right: 5px;
+}
+.cevapYazdirmaAlani{
+
+    margin: 0 0 0 10px;
+}
