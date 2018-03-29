@@ -21,22 +21,26 @@
         /**
          * Sorunun cevabını bu yorumdan sonra yazınız.
          * işleminn sonucu <div id="cevap-1"...></div> etiketi içerisine yazılmalıdır
-         *
          */
-
+        var A = 5, B = 8, C = 3;
+        document.getElementById("cevap-1").innerHTML = "C x ((A + B) x B) / 2 - C = " + (C * ((A + B) * B) / 2 - C).toString();
     </script>
     <div class="clearfix"></div>
 </div>
 <div class="soru">
     <span class="soruNumarasi">2.</span>
-    <p> Bir input a sayı yazdıktan sonra enter a basıldığında, girilen sayının tek mi çift mi olduğunu yazan programı yazınız.</p>
+    <p> Bir input a sayı yazdıktan sonra enter a basıldığında, girilen sayının tek mi çift mi olduğunu yazan programı
+        yazınız.</p>
     <p>(Detaylı bilgi kod içerisinde yorum satırları ile verilmiştir.) </p>
     <div class="clearfix"></div>
 </div>
 
 <div class="cevap">
     <span class="cevapNumarasi">Cevap 2 :</span>
-    <div id="cevap-2" class="cevapYazdirmaAlani">    </div>
+    <input type="number" name="sayi" id="sayi" placeholder="Sayı girin" onchange="tekMiCiftMi()">
+    <div id="cevap-2" class="cevapYazdirmaAlani">
+
+    </div>
     <script type="text/javascript">
         /**
          * Sayının girileceği input nesnesini <div id="cevap-2"...></div> etiketinin üstüne yazabilirsiniz.
@@ -50,6 +54,15 @@
          *
          */
 
+        function tekMiCiftMi() {
+            var girilenSayi = document.getElementById("sayi").value;
+            if (girilenSayi % 2 === 0) {
+                document.getElementById("cevap-2").innerHTML = " " + girilenSayi.toString() + " çift sayıdır.";
+            } else {
+                document.getElementById("cevap-2").innerHTML = " " + girilenSayi.toString() + " tek sayıdır.";
+
+            }
+        }
     </script>
     <div class="clearfix"></div>
 </div>
